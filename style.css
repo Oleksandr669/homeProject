@@ -1,0 +1,577 @@
+/*--------------------------------- Start screen + header ---------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.body {
+    position: relative;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+}
+.main {
+}
+.star-screen {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url(/image/ski2-slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    z-index: 20;
+}
+.header {
+    position: fixed;
+    width: 100%;
+}
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 0px 30px;
+    align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu__list li {
+    display: inline;
+}
+
+.menu__list li span {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+}
+.start-screen__title {
+    margin: auto;
+}
+@media (max-width: 1200px) {
+    .header__burger {
+        position: fixed;
+        width: 30px;
+        height: 20px;
+        z-index: 1;
+        left: 90%;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: rgb(8, 1, 1);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: "";
+        background-color: rgb(8, 1, 1);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    /* --------------------- */
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #101924;
+        padding: 80px 0px 20px 0px;
+    }
+    .header__menu.active {
+        right: 0;
+    }
+    .body_overlay.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    .body.active {
+        left: -125px;
+        transition: all 0.3s ease 0s;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .menu__list li {
+        margin: 0px 0px 20px 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+    .menu__link {
+    }
+}
+/* ------------------------------------Start screen + header END ---------------------------------------------------------- */
+
+/* --------------------- First blok section------------------- */
+a {
+    text-decoration: none;
+}
+
+.page {
+    background-color: #b5cfea;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media (max-width: 1240px) {
+    .container {
+        max-width: 940px;
+    }
+}
+@media (max-width: 960px) {
+    .container {
+        max-width: 710px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+.container__flex {
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 767px) {
+    .thre-blok {
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 767px) {
+    .thre-blok {
+        flex: 0 1 33.333%;
+    }
+}
+.thre-blok {
+    display: flex;
+}
+.thre-blok__colum {
+    flex: 0 1 100%;
+    padding: 0px 15px;
+}
+
+.rental-blok {
+    background-image: url(/image/ski2-home-pic1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 30% 55px 10%;
+    border-radius: 8px;
+    background-size: cover;
+}
+.rental__link {
+}
+.rental_text {
+    margin-top: 10px;
+}
+.blok-shop {
+    background-image: url(/image/ski2-home-pic4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 15% 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop__logo {
+}
+.logo__img {
+}
+.shop__link {
+}
+.lesson-blok {
+    background-image: url(/image/ski2-home-pic2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 160px 30% 145px 10%;
+    border-radius: 8px;
+    background-size: cover;
+}
+@media (max-width: 767px) {
+    .lesson-blok {
+        margin: 15px 0px;
+    }
+}
+.lesson__link div {
+    text-align: center;
+}
+
+.blok-jumping {
+    background-image: url(/image/ski2-home-pic3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 30% 55px 10%;
+    border-radius: 8px;
+    background-size: cover;
+}
+.jumping__link {
+}
+.jumping_text {
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.blok-resort {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width: 767px) {
+    .blok-resort {
+        justify-content: center;
+    }
+}
+
+.resort__link {
+}
+.str2192 {
+    font-size: 22px;
+    color: white;
+}
+a.str2192:after {
+    content: " \2192";
+}
+
+.link {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.color-black {
+    color: black;
+}
+.color-white {
+    color: white;
+}
+/* --------------------- First blok section END------------------- */
+
+/* --------------- */
+
+.offer-item {
+    flex-basis: 50%;
+    padding-right: 40px;
+}
+.offer__h2 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #233245;
+    margin-bottom: 20px;
+}
+.about-item span {
+    margin: 0 0 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4d5d71;
+}
+@media (max-width: 767px) {
+    .offer__h2 {
+        font-size: 53px;
+    }
+}
+
+.offer__button {
+    margin: 20px 0;
+    height: 50px;
+    width: 170px;
+    border-radius: 35px;
+    border-color: transparent;
+}
+.offer__button span {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #233245;
+}
+.offer-item span {
+    font-size: 15px;
+    color: #4d5d71;
+    line-height: 29px;
+}
+.offer__list-blok {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .offer__list-blok {
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__list {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .list > li {
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .list:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+}
+
+.offer__info {
+    padding-right: 1px;
+}
+
+.info-text {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #4d5d71;
+}
+
+.gorisont {
+    flex-direction: column;
+    max-width: 100%;
+    height: 20px;
+    background-image: url(/logo/ski2-sep1.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+}
+
+/* ------------------------------------------------ */
+.about-blok {
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.two-blok {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 250px;
+}
+@media (max-width: 767px) {
+    .two-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+}
+
+.two-blok__colum {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .two-blok__colum {
+        margin: auto;
+    }
+}
+.two-blok__colum p {
+    font-size: 100%;
+    color: #4d5d71;
+    text-align: center;
+}
+.snowboard-item,
+.skining-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .snowboard-item,
+    .skining-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.two-blok__colum-first {
+    flex-basis: 60%;
+    padding: 0px 15px;
+}
+@media (max-width: 767px) {
+    .two-blok__colum-first {
+        flex-basis: 100%;
+        padding: 0px 15px;
+        text-align: left;
+    }
+}
+.about-item {
+    flex-basis: 50%;
+    padding-right: 40px;
+}
+
+h3 {
+    margin: 15px 0;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+/* ------------------------------------------------ */
+.full__screen-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 110px;
+    padding-bottom: 140px;
+    background-image: url(/image/ski2-sectionbg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 20;
+}
+@media (max-width: 767px) {
+    .full__screen-section {
+        text-align: center;
+    }
+    .full-screen__title {
+        margin: 100px auto;
+    }
+    .full__screen-text {
+        margin: auto;
+    }
+}
+h2 {
+    /* text-align: center; */
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+}
+.full-screen__title {
+    align-self: flex-end;
+}
+.full__screen-info {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.full__screen-text {
+    width: 50%;
+}
+.full__screen-info p.title {
+    font-size: 35px;
+    font-weight: 500;
+    color: #233245;
+}
+.full__screen-info p.miles {
+    font-size: 100px;
+    font-weight: 500;
+    color: #233245;
+}
+.full__screen-text p {
+    color: #4d5d71;
+    font-size: 17px;
+    font-weight: 400;
+}
+.full__screen-button {
+    margin: 20px 0;
+    height: 50px;
+    width: 170px;
+    border-radius: 35px;
+    border-color: transparent;
+}
+.full__screen-button span {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #233245;
+}
+.button-box {
+    align-self: center;
+}
+.full__screen-info {
+    margin: 200px 0 20px 0;
+}
+
+/* ----------------------------------------------- footer ------------------------------------------ */
+.footer {
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .footer-info {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer-link {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.footer-info {
+}
+.footer-link {
+}
