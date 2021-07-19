@@ -208,7 +208,7 @@ a {
 }
 
 .rental-blok {
-    background-image: url(/image/ski2-home-pic1.jpg);
+    background-image: url(./image/ski2-home-pic1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 70px 30% 55px 10%;
@@ -221,7 +221,7 @@ a {
     margin-top: 10px;
 }
 .blok-shop {
-    background-image: url(/image/ski2-home-pic4.jpg);
+    background-image: url(./image/ski2-home-pic4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 30px 15% 40px;
@@ -238,7 +238,7 @@ a {
 .shop__link {
 }
 .lesson-blok {
-    background-image: url(/image/ski2-home-pic2.jpg);
+    background-image: url(./image/ski2-home-pic2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 160px 30% 145px 10%;
@@ -255,7 +255,7 @@ a {
 }
 
 .blok-jumping {
-    background-image: url(/image/ski2-home-pic3.jpg);
+    background-image: url(./image/ski2-home-pic3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 70px 30% 55px 10%;
@@ -387,7 +387,7 @@ a.str2192:after {
     flex-direction: column;
     max-width: 100%;
     height: 20px;
-    background-image: url(/logo/ski2-sep1.png);
+    background-image: url(./logo/ski2-sep1.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% 100%;
@@ -475,7 +475,7 @@ h3 {
     max-width: 100%;
     padding-top: 110px;
     padding-bottom: 140px;
-    background-image: url(/image/ski2-sectionbg2.jpg);
+    background-image: url(./image/ski2-sectionbg2.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 20;
