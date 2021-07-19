@@ -25,7 +25,7 @@ li {
     flex-direction: column;
     max-width: 100%;
     min-height: 100vh;
-    background-image: url(/image/ski2-slider-bg.jpg);
+    background-image: url(./image/ski2-slider-bg.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
